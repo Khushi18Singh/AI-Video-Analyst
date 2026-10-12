@@ -9,6 +9,10 @@
 ![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-FF6F61)
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B?logo=streamlit&logoColor=white)
 
+## 🚀 Live Demo
+
+**👉 [Open AI Video Analyst](https://your-app-name.streamlit.app/)**
+
 ## 🖼️ Application preview
 
 | Home | Pipeline running |
