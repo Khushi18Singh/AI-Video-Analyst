@@ -1,0 +1,45 @@
+# Secrets (never push these)
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Private app file
+app.py
+
+# App data: personal transcripts, audio and the search index
+meetings/
+uploads/
+downloads/
+downloades/
+vector_db/
+
+# Audio, video and model files
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.webm
+*.mkv
+*.pt
+
+# Scratch files and logs
+copy_code.txt
+*.log
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+.streamlit/

@@ -1,0 +1,44 @@
+# -- AI Meeting Assistant -- requirements.txt --
+# Python >= 3.10 recommended
+# NOTE: ffmpeg binary must be installed separately (apt / brew / Windows PATH)
+
+# -- Audio / Video acquisition --
+yt-dlp>=2024.4.9              # Download audio from YouTube URLs
+pydub>=0.25.1                 # Audio manipulation / format conversion
+ffmpeg-python>=0.2.0          # FFmpeg bindings (binary still required)
+
+# -- Speech-to-Text (local Whisper) --
+openai-whisper>=20231117      # Runs locally; task="translate" does Hindi -> English
+torch>=2.2.0                  # PyTorch backend for Whisper
+torchaudio>=2.2.0             # Audio utilities for PyTorch
+
+# -- Translation (optional: text-based Hindi -> English) --
+deep-translator>=1.11.4
+
+# -- LLM Orchestration: LangChain LCEL + Gemini (free API key) --
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-google-genai>=2.0.0 # ChatGoogleGenerativeAI (Gemini)
+
+# -- RAG Pipeline --
+chromadb>=0.5.0               # Local vector store
+langchain-chroma>=0.1.4       # LangChain <-> Chroma bridge
+sentence-transformers>=3.0.0  # HuggingFace embedding models
+langchain-huggingface>=0.1.0  # LangChain <-> HuggingFace embeddings
+huggingface-hub>=0.23.0       # Model downloads
+tiktoken>=0.7.0               # Token counting for text splitting
+
+# -- Streamlit UI --
+streamlit>=1.35.0
+watchdog>=4.0.0               # Faster hot-reload
+
+# -- PDF & TXT Export --
+fpdf2>=2.7.9                  # PDF generation (use a Unicode font for Hindi)
+
+# -- Utilities --
+python-dotenv>=1.0.0          # Load GOOGLE_API_KEY from .env
+numpy>=1.26.0
+tqdm>=4.66.0
+requests>=2.32.0
