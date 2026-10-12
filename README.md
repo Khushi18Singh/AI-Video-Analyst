@@ -74,7 +74,7 @@ YouTube link / file ──► Audio Processor ──► Transcriber ──► Su
 ## 📁 Project Structure
 
 ```
-ai-video-analyst/
+AI-Video-Analyst/
 ├── main.py                 # Terminal version of the pipeline
 ├── core/
 │   ├── transcriber.py      # Whisper transcription
@@ -84,11 +84,8 @@ ai-video-analyst/
 │   └── vector_store.py     # ChromaDB store and retriever
 ├── utils/
 │   └── audio_processor.py  # Download, convert and chunk audio
-├── .streamlit/
-│   └── config.toml         # Theme
 ├── assets/                 # Screenshots used in this README
 ├── requirements.txt        # Dependencies
-├── .env.example            # Example environment file
 ├── .gitignore
 └── README.md
 ```
@@ -110,8 +107,8 @@ Close the terminal, open a new one, and check it with `ffmpeg -version`.
 ### 2. Clone the repository
 
 ```bash
-git clone https://github.com/Khushi18Singh/ai-video-analyst.git
-cd ai-video-analyst
+git clone https://github.com/Khushi18Singh/AI-Video-Analyst.git
+cd AI-Video-Analyst
 ```
 
 ### 3. Create a virtual environment and install dependencies
@@ -175,6 +172,6 @@ The first run downloads the Whisper `small` model (about 460 MB) and the embeddi
 
 **Khushi Singh**
 
-I build AI projects with Python, LangChain and Streamlit. AI Video Analyst is one of them.
+I am Khushi Singh, an aspiring AI engineer and Generative AI learner. I enjoy building practical projects with Python, LangChain and Streamlit, and AI Video Analyst is one of them. I am learning by building, and I am open to feedback and new ideas.
 
 If you like this project, give it a ⭐ on GitHub.
